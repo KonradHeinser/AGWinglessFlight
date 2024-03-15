@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef ParentName="AG_WingBase">
+		<defName>WinglessFlight</defName>
+		<label>wingless flight</label>
+		<description>Carriers with this gene can float off the ground without any aid.</description>
+		<iconPath>Genes/WinglessFlightGene</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<displayCategory>AG_Wings</displayCategory>
+		<biostatMet>-1</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>floating</symbol>
+				</li>
+				<li>
+					<symbol>flying</symbol>
+				</li>
+				<li>
+					<symbol>levitating</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
+		<customEffectDescriptions>
+			<li>Colonist will ignore terrain movement costs</li>
+		</customEffectDescriptions>
+		<abilities>
+			<li>WinglessJump</li>
+		</abilities>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
+				<hediffToWholeBody>AG_Hover</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<AbilityDef>
+		<defName>WinglessJump</defName>
+		<label>propel self</label>
+		<description>Propel body over a short distance.</description>
+		<iconPath>UI/Abilities/AG_WingPoweredJump</iconPath>
+		<cooldownTicksRange>2400</cooldownTicksRange>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityJump</verbClass>
+			<label>flap wings</label>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>0.5</warmupTime>
+			<range>6.9</range>
+			<requireLineOfSight>true</requireLineOfSight>
+			<soundCast>AG_WingsFlapping</soundCast>
+			<soundLanding>Longjump_Land</soundLanding>
+			<flyWithCarriedThing>true</flyWithCarriedThing>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+</Defs>
