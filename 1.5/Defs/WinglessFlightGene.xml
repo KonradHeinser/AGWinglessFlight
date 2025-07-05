@@ -9,6 +9,7 @@
 		<displayCategory>AG_Wings</displayCategory>
 		<biostatMet>-1</biostatMet>
 		<selectionWeight>0</selectionWeight>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<symbolPack>
 			<prefixSymbols>
 				<li>

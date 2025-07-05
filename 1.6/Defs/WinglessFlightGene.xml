@@ -9,7 +9,6 @@
 		<displayCategory>AG_Wings</displayCategory>
 		<biostatMet>-1</biostatMet>
 		<selectionWeight>0</selectionWeight>
-		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<symbolPack>
 			<prefixSymbols>
 				<li>
@@ -30,7 +29,7 @@
 			<li>WinglessJump</li>
 		</abilities>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>UI/Icons/Genes/AG_Endogenes</backgroundPathEndogenes>
 				<backgroundPathXenogenes>UI/Icons/Genes/AG_Xenogenes</backgroundPathXenogenes>
 				<hediffToWholeBody>AG_Hover</hediffToWholeBody>
@@ -44,6 +43,7 @@
 		<description>Propel body over a short distance.</description>
 		<iconPath>UI/Abilities/AG_WingPoweredJump</iconPath>
 		<cooldownTicksRange>2400</cooldownTicksRange>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbilityJump</verbClass>
 			<label>flap wings</label>

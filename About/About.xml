@@ -6,6 +6,7 @@
   <supportedVersions>
     <li>1.4</li>
     <li>1.5</li>
+    <li>1.6</li>
   </supportedVersions>
   
   <modDependencies>
@@ -38,4 +39,3 @@ Requested mod that adds a new option to the flight section of Alpha Genes, a win
 [url=https://ko-fi.com/alite56114][img]https://i.imgur.com/Utx6OIH.png[/img][/url]
   </description>
 </ModMetaData>
-
